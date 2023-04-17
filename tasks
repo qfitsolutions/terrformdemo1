@@ -14,3 +14,7 @@
     terrafrom output
       subnet: value should print. 
 5. Add userdata for bootstrap script in ec2. echo "hello world" > /tmp/userdata
+
+6. create shellscript/powershell .sh/.ps1 execute this script  using userdata
+
+7. identify userdata logs path in ec2 and check/debug logs
