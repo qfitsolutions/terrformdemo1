@@ -1,5 +1,19 @@
 1. create ec2 instance using terraform.
+resource "aws_instance" "app_server" {
+  ami           = "ami-007855ac798b5175e"
+  instance_type = "t2.micro"
 
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+  
+  terraform {
+    backend "s3" {
+        bucket = "tanmayabucket"
+        key = "ec2/dev/terraform.tfstate"
+        region = "us-east-1"
+    }
+}
 2. Add s3 bucket as backend for terraform.tfsttae file  
     terraform init
     terraform plan
