@@ -14,7 +14,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-007855ac798b5175e"
+  ami           = data.aws_ami.ubuntu.id
+  #ami           = "ami-007855ac798b5175e"
   instance_type = var.instancetype
 
   tags = {
