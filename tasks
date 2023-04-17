@@ -13,3 +13,4 @@
 4. Use output variable to print publicip and subnetid of aws instance.
     terrafrom output
       subnet: value should print. 
+5. Add userdata for bootstrap script in ec2. echo "hello world" > /tmp/userdata
