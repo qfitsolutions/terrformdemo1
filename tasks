@@ -10,6 +10,6 @@
     run below command:
        terraform plan -out=dev.plan -var-file=dev.tfvars
        terraform apply "dev.plan"
-4. Use output variable to print subnet of aws instance.
+4. Use output variable to print publicip and subnetid of aws instance.
     terrafrom output
       subnet: value should print. 
