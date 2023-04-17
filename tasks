@@ -18,3 +18,5 @@
 6. create shellscript/powershell .sh/.ps1 execute this script  using userdata
 
 7. identify userdata logs path in ec2 and check/debug logs
+
+8. ec2, s3, elb, asg, cloudwatch,RDS,ECS,ECR using terraform
