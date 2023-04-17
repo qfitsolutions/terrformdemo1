@@ -1,0 +1,4 @@
+1. create ec2 instance using terraform.
+
+2. Add s3 bucket as backend for terraform.tfsttae file 
+
