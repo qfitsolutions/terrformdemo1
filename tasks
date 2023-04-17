@@ -4,4 +4,9 @@
     terraform init
     terraform plan
     terraform apply
-
+3. enable data sepearaton for terraform templates.
+    create variables.tf
+    create dev.tfvars
+    run below command:
+       terraform plan -out=dev.plan -var-file=dev.tfvars
+       terraform apply "dev.plan"
