@@ -18,6 +18,6 @@ resource "aws_instance" "app_server" {
   instance_type = var.instancetype
 
   tags = {
-    Name = "devdemo"
+    Name = var.tagname
   }
 }
