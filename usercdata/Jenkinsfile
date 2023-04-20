@@ -1,0 +1,24 @@
+pipeline{
+
+agent any
+stages{
+    stage("clone repo"){
+        checkout scm
+    }
+    stage("terraform init"){
+        sh "terraform init"
+    }
+    stage("terraform plan"){
+        sh "terraform plan -out dev.plan -var-file=dev.tfvars"
+    }
+    stage("terraform apply"){
+        sh "terraform apply dev.plan"
+    }
+    stage("terraform apply"){
+        if(flag == true){
+        sh "terraform destroy -var-file dev.tfvars"
+        }
+    }
+}
+
+}
