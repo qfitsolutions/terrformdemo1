@@ -48,3 +48,6 @@ import exusting ec2 instance with terraform ec2 resource.
 2. develop ec2_instance terraform script
 3. run terraform import command:
    ex:  terraform import aws_instance.web i-12345678
+   
+task7: attach userdata scripg file to aws ec2 instance instance terraform
+    
