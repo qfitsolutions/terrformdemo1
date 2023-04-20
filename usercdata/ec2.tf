@@ -7,10 +7,7 @@ resource "aws_instance" "ec2_jenkins" {
   # key name
   key_name = "${var.key_name}"
 
-  user_data = <<EOF
-		
-	   EOF
-
+  user_data = "userdata.sh"
   tags = {
     Name = "Ec2-User-data"
   }
