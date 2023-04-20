@@ -14,4 +14,6 @@ task1:  create 5 ec2 instances with single resource.
         }
       }
       
-  
+      
+ task2: create instances with list of values and check without count paramter
+  hint: use for loop in terraform with list
