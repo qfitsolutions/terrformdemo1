@@ -1,0 +1,17 @@
+task1:  create 5 ec2 instances with single resource.
+
+      resource "aws_instance" "app_server" {
+        #ami           = "ami-007855ac798b5175e"
+        ami            = data.aws_ami.ubuntu.id
+        instance_type = var.instancetype
+        user_data = <<EOF
+                     #!/bin/bash
+                     echo "hello world" > /tmp/userdata 
+                 EOF
+
+        tags = {
+          Name = var.tagname
+        }
+      }
+      
+  
