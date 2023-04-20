@@ -41,3 +41,10 @@ task4:
 task5:
   1. create ebs volume :  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ebs_volume
   2. create ec2 instance and attach it to new volume.:  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/volume_attachment
+
+task6:
+import exusting ec2 instance with terraform ec2 resource.
+1. create ec2 instance
+2. develop ec2_instance terraform script
+3. run terraform import command:
+   ex:  terraform import aws_instance.web i-12345678
