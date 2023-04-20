@@ -37,3 +37,7 @@ read this yaml file and poass asaparamters to aws_instance terraform resource:
 task4:
   clone this repo: git@github.com:qfitsolutions/terrformdemo1.git
   run terraform commands in terraform-modules directory.
+  
+task5:
+  1. create ebs volume :  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ebs_volume
+  2. create ec2 instance and attach it to new volume.:  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/volume_attachment
