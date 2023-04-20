@@ -61,7 +61,7 @@ module "security_group" {
 ################################################################################
 
 module "ec2" {
-  source = "../../"
+  source  = "terraform-aws-modules/ec2-instance/aws"
 
   name = local.name
 
