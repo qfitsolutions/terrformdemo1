@@ -51,3 +51,6 @@ import exusting ec2 instance with terraform ec2 resource.
    
 task7: attach userdata scripg file to aws ec2 instance instance terraform
     
+task8:  run vpc modules using b elow directory:
+    terraformvpcmodule
+    
