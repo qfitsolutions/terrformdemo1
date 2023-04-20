@@ -34,3 +34,6 @@ read this yaml file and poass asaparamters to aws_instance terraform resource:
         instance_count: 3
         instance_type: t3.micro
         environment: prod
+task4:
+  clone this repo: git@github.com:qfitsolutions/terrformdemo1.git
+  run terraform commands in terraform-modules directory.
