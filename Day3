@@ -12,3 +12,14 @@ task2:
   terraform plan
   terraform untaint aws_instance.ec2_example
   terraform plan
+
+task3:
+   clone repo : 
+     go into cd remote
+     
+     > ssh-keygen
+     > terarform init
+     > terraform plan
+     > terraform apply -auto-aprrove
+     
+     
