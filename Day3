@@ -25,3 +25,9 @@ task3:
 Task4: lambda function creation using tf
  
 Task5: Use dopcker provider with terraform to launch  nginx container.
+
+1. install docker
+2. enable docker run permissions to ubuntu user
+      chown ubuntu:ubuntu /var/run/docker.sock
+3. copy docker main.tf file
+4. run terraform commands.
