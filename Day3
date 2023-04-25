@@ -22,4 +22,6 @@ task3:
      > terraform plan
      > terraform apply -auto-aprrove
      
-     
+Task4: lambda function creation using tf
+ 
+Task5: Use dopcker provider with terraform to launch  nginx container.
