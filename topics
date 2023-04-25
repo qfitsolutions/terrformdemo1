@@ -1,0 +1,173 @@
+* TERRAFORM
+
+
+Day 1:
+
+* Introduction to Infrastructure as code
+* 
+* Before infrastructure as code
+* Introduction to infrastructure as code
+* Infrastructure as code benefits
+* Infrastructure as code tools
+
+* Introduction to Terraform
+* 
+* Introduction to Terraform
+* Benefits of Terraform
+* Installing Terraform on Windows machine
+* Installing Terraform on Linux machine
+
+* Terraform basics
+* 
+* Introduction to Terraform providers
+* Introduction to Terraform resources
+* Introduction to Terraform registry
+* AWS authorization and configuration
+* AWS authorization using environment variables
+* AWS authorization using credential files
+* AWS authorization using IAM role
+* Terraform basic syntax
+
+* Terraform lifecycle or workflow
+* 
+* Terraform init
+* Terraform validate
+* Terraform plan
+* Terraform apply
+* Terraform show
+* Terraform destroy
+
+* Terraform state file
+* 
+* Introduction to Terraform state file
+* Terraform state file management
+* Terraform state file backend
+* Local backend
+* Remote backend
+* Using S3 bucket as the backend
+* Locking the state file
+* Terraform state pull
+* 
+Day2:
+
+
+* Terraform variables
+* Introduction to Terraform variables
+* Using input variable names
+* Variables on the command line
+* Variable definition files
+* Environment variables
+
+* Terraform outputs
+* 
+* Introduction to Terraform outputs
+* Declaring Terraform outputs
+* Terraform outputs optional arguments
+
+
+
+* Terraform Data source
+* 
+* Introduction to Terraform data source
+* Terraform data source – example 1
+* Terraform data source – example 2
+
+* Terraform modules
+* 
+* Introduction to Terraform modules
+* Module repositories
+* First basic module
+* The module code
+* Main Terraform code
+* Using Git repositories to save the module
+* Using S3 bucket to save the module.
+* Calling the module code.
+
+Day3:
+
+* Terraform data types
+* 
+* String
+* Number
+* Bool
+* List
+* Set
+* Map
+* Object
+* Tuple
+
+* Terraform locals
+* 
+* Introduction to Terraform locals
+* Terraform locals example
+
+* Breaking the Terraform configuration files
+
+
+* 
+* Terraform provisioners
+* 
+* Introduction to Terraform provisioners
+* Declaring Terraform provisioner block
+* Local-exec provisioner
+* File provisioner
+* Remote-exec provisioner
+
+* Terraform meta-arguments
+* 
+* Introduction to Terraform meta-arguments
+* Depends_on meta-argument
+* Count meta-argument
+* For_each meta-argument
+* Provider meta-argument
+* Lifecycle meta-argument
+
+* Terraform tainting
+* 
+* Introduction to Terraform tainting
+* Terraform taint example
+* Terraform taint alternative
+
+* Terraform null_resource
+* 
+* Introduction to Terraform null_resource
+* Terraform null_resource example
+
+* Terraform workspaces
+* 
+* Introduction to Terraform workspaces
+* Terraform workspace list command
+* Terraform workspace new command
+* Terraform workspace select command
+* Terraform workspace delete command
+* Terraform workspace show command
+
+*    Few examples in Azure platform
+*      Virtual machine
+*      AKS cluster
+*      Storage account
+
+Day4:
+
+
+
+* Terraform functions
+* 
+* Numeric functions
+* String functions
+* Collection functions
+* Filesystem functions
+* Date and time functions
+
+* Terraform cloud
+* 
+* Introduction to Terraform cloud
+* Workspaces
+* Terraform runs
+* Users, Teams and Organizations
+* Connecting to VCS
+* No-code provisioning
+* 
+*  End-2-end application deployment using terraform
+*  Infra Architecture 
+*  Application deployment with Kubernetes using terraform
