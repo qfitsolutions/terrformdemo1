@@ -1,0 +1,5 @@
+task1:  enable lock for terraform tfsttae to control multiple users
+creeate buckets
+create ddb
+update main.tf with backend + ddb tavble
+run terraform life cycle commands.
