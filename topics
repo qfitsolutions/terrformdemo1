@@ -85,89 +85,84 @@ Day2:
 
 Day3:
 
-* Terraform data types
-* 
-* String
-* Number
-* Bool
-* List
-* Set
-* Map
-* Object
-* Tuple
+Locking the state file
 
-* Terraform locals
-* 
-* Introduction to Terraform locals
-* Terraform locals example
+Terraform data types
+ 
+  * String
+  * Number
+  * Bool
+  * List
+  * Set
+  * Map
+  * Object
+  * Tuple
 
-* Breaking the Terraform configuration files
+Terraform locals
+  * Introduction to Terraform locals
+  * Terraform locals example
 
+Breaking the Terraform configuration files
+Terraform provisioners
+ 
+  * Introduction to Terraform provisioners
+  * Declaring Terraform provisioner block
+  * Local-exec provisioner
+  * File provisioner
+  * Remote-exec provisioner
 
-* 
-* Terraform provisioners
-* 
-* Introduction to Terraform provisioners
-* Declaring Terraform provisioner block
-* Local-exec provisioner
-* File provisioner
-* Remote-exec provisioner
+Terraform meta-arguments
 
-* Terraform meta-arguments
-* 
-* Introduction to Terraform meta-arguments
-* Depends_on meta-argument
-* Count meta-argument
-* For_each meta-argument
-* Provider meta-argument
-* Lifecycle meta-argument
+  * Introduction to Terraform meta-arguments
+  * Depends_on meta-argument
+  * Count meta-argument
+  * For_each meta-argument
+  * Provider meta-argument
+  * Lifecycle meta-argument
 
-* Terraform tainting
-* 
-* Introduction to Terraform tainting
-* Terraform taint example
-* Terraform taint alternative
+Terraform tainting
+ 
+  * Introduction to Terraform tainting
+  * Terraform taint example
+  * Terraform taint alternative
 
-* Terraform null_resource
-* 
-* Introduction to Terraform null_resource
-* Terraform null_resource example
+Terraform null_resource
 
-* Terraform workspaces
-* 
-* Introduction to Terraform workspaces
-* Terraform workspace list command
-* Terraform workspace new command
-* Terraform workspace select command
-* Terraform workspace delete command
-* Terraform workspace show command
+  * Introduction to Terraform null_resource
+  * Terraform null_resource example
 
-*    Few examples in Azure platform
-*      Virtual machine
-*      AKS cluster
-*      Storage account
+Terraform workspaces
+
+  * Introduction to Terraform workspaces
+  * Terraform workspace list command
+  * Terraform workspace new command
+  * Terraform workspace select command
+  * Terraform workspace delete command
+  * Terraform workspace show command
+
+ Azure platform with Terraform 
+    * Virtual machine
+    * AKS cluster
+    * Storage account
 
 Day4:
 
+Terraform functions
+ 
+  * Numeric functions
+  * String functions
+  * Collection functions
+  * Filesystem functions
+  * Date and time functions
 
+Terraform cloud
+  * Introduction to Terraform cloud
+  * Workspaces
+  * Terraform runs
+  * Users, Teams and Organizations
+  * Connecting to VCS
+  * No-code provisioning
 
-* Terraform functions
-* 
-* Numeric functions
-* String functions
-* Collection functions
-* Filesystem functions
-* Date and time functions
-
-* Terraform cloud
-* 
-* Introduction to Terraform cloud
-* Workspaces
-* Terraform runs
-* Users, Teams and Organizations
-* Connecting to VCS
-* No-code provisioning
-* 
-*  End-2-end application deployment using terraform
-*  Infra Architecture 
-*  Application deployment with Kubernetes using terraform
+End-2-end application deployment using terraform
+  * Infra Architecture 
+  * Application deployment with Kubernetes using terraform
