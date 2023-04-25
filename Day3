@@ -3,3 +3,12 @@ creeate buckets
 create ddb
 update main.tf with backend + ddb tavble
 run terraform life cycle commands.
+
+task2:
+  Explore taint , untaint commands and replace option in terraform apply command.
+  
+  terraform apply -replace aws_instance.ec2_example
+  terraform taint aws_instance.ec2_example
+  terraform plan
+  terraform untaint aws_instance.ec2_example
+  terraform plan
