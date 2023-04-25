@@ -31,3 +31,12 @@ Task5: Use dopcker provider with terraform to launch  nginx container.
       chown ubuntu:ubuntu /var/run/docker.sock
 3. copy docker main.tf file
 4. run terraform commands.
+
+Task6: clone this and run
+
+https://github.com/qf-devops/Terraform-Topics/tree/main/terraform-docker
+
+Clone this and run
+It will two thing
+Docker build 
+Docker run
