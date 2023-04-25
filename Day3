@@ -32,6 +32,9 @@ Task5: Use dopcker provider with terraform to launch  nginx container.
 3. copy docker main.tf file
 4. run terraform commands.
 
+
+Assignments:
+
 Task6: clone this and run
 
 https://github.com/qf-devops/Terraform-Topics/tree/main/terraform-docker
@@ -40,3 +43,7 @@ Clone this and run
 It will two thing
 Docker build 
 Docker run
+
+Task7: can you run dopcker-compose using terraform
+      
+task8:  Run docker swarm services uisng terraform.
