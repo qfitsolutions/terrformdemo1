@@ -24,6 +24,7 @@ variable "cidr" {
   type        = string
   default     = "172.32.0.0/16"
 }
+
 variable "instance_tenancy" {
   description = "A tenancy option for instances launched into the VPC"
   type        = string
