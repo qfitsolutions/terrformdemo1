@@ -7,11 +7,11 @@ resource "aws_lb" "collectlb" {
 
   enable_deletion_protection = true
 
-  access_logs {
-    bucket  = aws_s3_bucket.lb_logs.id
-    prefix  = "collect-lb-tf"
-    enabled = true
-  }
+#   access_logs {
+#     bucket  = aws_s3_bucket.lb_logs.id
+#     prefix  = "collect-lb-tf"
+#     enabled = true
+#   }
 
   tags = {
     Environment = "production"
@@ -21,11 +21,11 @@ resource "aws_lb" "collectlb" {
   ] 
 }
 
-resource "aws_s3_bucket" "lb_logs" {
-  bucket = "collect-lb-tf-bucket"
+# resource "aws_s3_bucket" "lb_logs" {
+#   bucket = "collect-lb-tf-bucket"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "production"
-  }
-}
+#   tags = {
+#     Name        = "My bucket"
+#     Environment = "production"
+#   }
+# }
