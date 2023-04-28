@@ -22,7 +22,7 @@ resource "aws_subnet" "public_1" {
   availability_zone       = "us-east-1a"
   vpc_id                  = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
-  cidr_block              = "10.0.1.0/24"
+  cidr_block              = "172.32.1.0/24"
 
   tags = {
     Name = "public_1-demo"
@@ -33,7 +33,7 @@ resource "aws_subnet" "public_2" {
   availability_zone       = "us-east-1b"
   vpc_id                  = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
-  cidr_block              = "10.0.2.0/24"
+  cidr_block              = "172.32.2.0/24"
 
   tags = {
     Name = "public_1-demo"
@@ -44,7 +44,7 @@ resource "aws_route_table" "route-public" {
   vpc_id = aws_vpc.vpc_demo.id
 
   route {
-    cidr_block = "10.0.0.0/0"
+    cidr_block = "172.32.0.0/0"
     gateway_id = aws_internet_gateway.gw.id
   }
 
