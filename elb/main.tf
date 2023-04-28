@@ -54,12 +54,12 @@ resource "aws_instance" "web" {
     app = "abc".${count.index}
   }
 }
-resource "aws_lb_target_group_attachment" "test" {
+resource "aws_lb_target_group_attachment" "test1" {
   target_group_arn = aws_lb_target_group.test.arn
   target_id        = aws_instance.web[0].id
   port             = 80
 }
-resource "aws_lb_target_group_attachment" "test" {
+resource "aws_lb_target_group_attachment" "test2" {
   target_group_arn = aws_lb_target_group.test.arn
   target_id        = aws_instance.web[1].id
   port             = 80
