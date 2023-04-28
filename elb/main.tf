@@ -51,7 +51,7 @@ resource "aws_instance" "web" {
         EOF
   tags = {
     Name = "instance1"
-    app = ${count.index}
+    app = "${count.index}"
   }
 }
 resource "aws_lb_target_group_attachment" "test1" {
