@@ -16,6 +16,9 @@ resource "aws_lb" "collectlb" {
   tags = {
     Environment = "production"
   }
+  depends_on = [
+    aws_s3_bucket.lb_logs
+  ] 
 }
 
 resource "aws_s3_bucket" "lb_logs" {
