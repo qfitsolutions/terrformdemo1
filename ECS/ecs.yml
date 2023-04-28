@@ -44,7 +44,7 @@ Resources:
       ExecutionRoleArn: !Ref ExecutionRole
       ContainerDefinitions:
         - Name: deployment-example-container
-          Image: nginx:1.17.7
+          Image: "apache:latest"
           PortMappings:
             - ContainerPort: 80
           LogConfiguration:
