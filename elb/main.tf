@@ -41,6 +41,7 @@ resource "aws_instance" "web" {
   ami           = "ami-007855ac798b5175e"
   instance_type = "t3.micro"
   count = 2
+  security_groups = ["sg-04086a1fcf30c383a"]
   user_data = <<EOF
         #! /bin/bash
         sudo apt update 
