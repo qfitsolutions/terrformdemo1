@@ -23,7 +23,7 @@ variable "instance_type" {
 
 variable "subnets" {
   type    = list(string)
-  default = ["subnet-59b98303","subnet-0d7cb232"]
+  default = ["subnet-0653301dc297b198a","subnet-0277e8ad73620c41d"]
 }
 
 variable "azs" {
@@ -33,5 +33,5 @@ variable "azs" {
 
 variable "security_grpup_id" {
   type    = string
-  default = "sg-53623a20"
+  default = "sg-0a6cae675de55c2a5"
 }
