@@ -29,3 +29,10 @@ resource "aws_lb" "collectlb" {
 #     Environment = "production"
 #   }
 # }
+
+resource "aws_lb_target_group" "test" {
+  name     = "tf-example-lb-tg"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id   = "vpc-0ef615c510b77dcc3"
+}
