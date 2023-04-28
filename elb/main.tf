@@ -36,3 +36,31 @@ resource "aws_lb_target_group" "test" {
   protocol = "HTTP"
   vpc_id   = "vpc-0ef615c510b77dcc3"
 }
+
+resource "aws_instance" "web" {
+  ami           = "ami-007855ac798b5175e"
+  instance_type = "t3.micro"
+  count = 2
+  user_data = <<EOF
+        #! /bin/bash
+        sudo apt update 
+        sudo apt install -y nginx
+        sudo service nginx start
+        sudo service nginx enable
+        echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
+        EOF
+  tags = {
+    Name = "instance1"
+    app = "abc".${count.index}
+  }
+}
+resource "aws_lb_target_group_attachment" "test" {
+  target_group_arn = aws_lb_target_group.test.arn
+  target_id        = aws_instance.web[0].id
+  port             = 80
+}
+resource "aws_lb_target_group_attachment" "test" {
+  target_group_arn = aws_lb_target_group.test.arn
+  target_id        = aws_instance.web[1].id
+  port             = 80
+}
